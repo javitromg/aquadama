@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel de Administración | Aquadama</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Aquadama</h2>
+    <ul>
+      <li><a href="#" id="nav-empleados">📋 Empleados</a></li>
+      <li><a href="#" id="nav-usuarios">👤 Administradores</a></li>
+      <li><a href="#" id="nav-pass">🔒 Contraseña</a></li>
+      <li><a href="#" id="logout">🚪 Cerrar Sesión</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <section id="panel-empleados">
+      <h1>Empleados Registrados</h1>
+      <div id="employeeList"></div>
+    </section>
+
+    <section id="panel-usuarios" class="hidden">
+      <h1>Gestión de Administradores</h1>
+      <form id="createAdminForm">
+        <label>Nuevo Usuario:<input type="text" id="newAdminUser" required /></label>
+        <label>Contraseña:<input type="password" id="newAdminPass" required /></label>
+        <button type="submit">Crear Administrador</button>
+      </form>
+      <ul id="adminList"></ul>
+    </section>
+
+    <section id="panel-pass" class="hidden">
+      <h1>Cambiar Contraseña</h1>
+      <form id="changePassForm">
+        <label>Contraseña Actual:<input type="password" id="currentPass" required /></label>
+        <label>Nueva Contraseña:<input type="password" id="newPass" required /></label>
+        <button type="submit">Cambiar</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
