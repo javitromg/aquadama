@@ -1,0 +1,3 @@
+PORT=4000
+DATABASE_URL=postgresql://aquadama_db_user:Hzbiq7AspRyTS0tBvTfJCj3vIa1yY9lr@dpg-d1mh9g15pdvs73d1rg20-a.oregon-postgres.render.com/aquadama_db
+JWT_SECRET=una_clave_secreta_segura
